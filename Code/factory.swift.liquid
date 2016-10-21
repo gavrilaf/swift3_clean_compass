@@ -38,6 +38,11 @@ struct {{ module_info.name }}Factory : ModuleFactoryProtocol {
         return controller
     }
 
+    // MARK: Helpers
+    //func createModuleURN(arguments) -> String {
+    //    return URNBuilder(string: moduleURN).buildWithArgs(args: [arguments])
+    //}
+    
     // MARK:
     let storyboardId = "{{ module_info.name }}"
     let initialControllerID = "{{ module_info.name }}ViewController"
