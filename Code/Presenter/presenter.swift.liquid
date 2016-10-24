@@ -10,6 +10,7 @@ class {{ module_info.name }}Presenter {
 
     weak var view: {{ module_info.name }}ViewInput!
     var interactor: {{ module_info.name }}InteractorInput!
+    var moduleCompletion: ModuleCompletionHandler?
 }
 
 // MARK:
