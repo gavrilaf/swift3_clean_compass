@@ -11,5 +11,6 @@
  */
 protocol {{ module_info.name }}ViewOutput {
 
+	func setupInitialState(withArguments args: NamedValuesType, completion: ModuleCompletionHandler?)
   	func viewIsReady()
 }
