@@ -1,5 +1,5 @@
 //
-//  {{ prefix }}{{ module_info.name }}{{ module_info.file_name }}
+//  {{ module_info.file_name }}
 //  {{ module_info.project_name }}
 //
 //  Created by {{ developer.name }} on {{ date }}.
@@ -22,8 +22,7 @@ class {{ module_info.name }}ModuleConfigurator {
         presenter.view = viewController
         
         let interactor = {{ module_info.name }}Interactor()
-        interactor.output = presenter
-
+        
         presenter.interactor = interactor
         viewController.output = presenter
     }
